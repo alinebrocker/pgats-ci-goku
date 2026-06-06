@@ -8,8 +8,7 @@ name: "Execução Manual"
 # gatilho automático - push da branch
 
 on:
-    workflow_dispatch:  
-    workflow_dispatch:  
+    workflow_dispatch: 
 
 #tarefas dentro da pipeline = jobs
 
@@ -47,7 +46,6 @@ jobs:
             # executar os testes e2e
             - name: Executando testes e2e
               run: yarn run e2e
-              #continue-on-error: true
             
             # publicar relatório do Playwright
             - name: Publicando relatório Playwright
